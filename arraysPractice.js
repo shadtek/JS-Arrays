@@ -47,7 +47,12 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 //Write a function called reversedLooper that is given letters as it's only argument and loops through the given array backwards alerting every item in the array starting at the end.
 
   //Code Here
-
+var reversedLooper = function() {
+  for (var i = letters.length - 1; i >= 0; i--) {
+    alert(letters[i]);
+  };
+}
+reversedLooper();
 
 //Next Problem
 
