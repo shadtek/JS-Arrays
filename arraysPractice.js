@@ -20,7 +20,10 @@ var arr = [40,50,60];
 
 
   //Code Here
-
+var last = function() {
+  return arr[arr.length - 1]
+}
+last();
 
 //Next Problem
 
