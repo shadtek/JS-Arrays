@@ -87,7 +87,11 @@ var divider = function(n, e, o) {
     } else {
       o.push(n[i])
     }
+    n.unshift();
+    i--;
   };
+  //now I need to join e and join o
+  //then 
 }
 divider(nums, evens, odds);
 
