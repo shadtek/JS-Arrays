@@ -80,23 +80,22 @@ var evens = [];
 var odds = [];
 //Write a function called divider that is given three arguments, nums, evens, and odds.
 //Have divider return an Array with the first item in the array being the evens array (all the even values from nums) and the second item in the Array being the odds array(all the odd values from nums).
-var divider = function(n, e, o) {
-  for (var i = 0; i < n.length; i++) {
-    if (n[i] % 2 === 0) {
-      e.push(n[i])
-    } else {
-      o.push(n[i])
-    }
-    n.unshift();
-    i--;
-  };
-  //now I need to join e and join o
-  //then 
-}
-divider(nums, evens, odds);
+
 
   //Code Here
 
+var divider = function(n, e, o) {
+  for (var i = n.length - 1; i >= 0; i--) {
+    if (n[i] % 2 === 0) {
+      e.push(n[i]);
+    } else {
+      o.push(n[i]);
+    }
+    n.pop();
+  }
+  n.push(e.reverse(), o.reverse());
+};
+divider(nums, evens, odds);
 
 //Next Problem
 
