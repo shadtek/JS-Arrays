@@ -81,7 +81,6 @@ var odds = [];
 //Write a function called divider that is given three arguments, nums, evens, and odds.
 //Have divider return an Array with the first item in the array being the evens array (all the even values from nums) and the second item in the Array being the odds array(all the odd values from nums).
 
-
   //Code Here
 
 var divider = function(n, e, o) {
@@ -102,12 +101,22 @@ divider(nums, evens, odds);
 
 var getRandomArbitrary = function() {
   return Math.floor(Math.random() * (30 - 0) + 0);
-}
+};
 var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 //Above you're given a function that will return a random number between 0 and 30, and an array full of numbers. Your job is to write a function named finder that will get a random number, then loop through the array to see if that random number is in the array. If it is, return true, if it's not, return false
 
   //Code Here
-
+var finder = function(n, checkMe) {
+  for (var i = 0; i < n.length; i++) {
+    if (n[i] === checkMe) {
+      return console.log(checkMe + " is in the list.");
+      //I would have returned true right here but this was a little more fun for the homework.
+    }
+  }
+  return console.log(checkMe + " is not in the list.");
+  //I would have returned false right here but this was a little more fun for the homework.
+};
+finder(numbers, getRandomArbitrary());
 
 //Next problem
 
