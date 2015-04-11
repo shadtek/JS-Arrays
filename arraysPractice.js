@@ -109,11 +109,11 @@ var numbers = [0,3,4,5,6,7,9,14,17,24,25,26,29,30];
 var finder = function(n, checkMe) {
   for (var i = 0; i < n.length; i++) {
     if (n[i] === checkMe) {
-      return console.log(checkMe + " we have a winner!");
+      return console.log("Your number is " + checkMe + " and that's a winning number!");
       //I would have returned true right here but this was a little more fun for the homework.
     }
   }
-  return console.log(checkMe + " sorry try again next time.");
+  return console.log("Your number is " + checkMe + ", that's not a winning number.");
   //I would have returned false right here but this was a little more fun for the homework.
 };
 finder(numbers, getRandomArbitrary());
