@@ -193,9 +193,14 @@ var numbers = [5, '9', 16, 19, '25', '34', 48];
 //array after adding ten to each item in numbers. *Verify your answer is correct. --> [15, 19, 26, 29, 35, 44, 58]
 
   //Code Here
-var addTen = function() {
-  
+var addTen = function(n) {
+	for (var i in n) {
+		n[i] = parseInt(n[i], 10);
+		n[i] = n[i] + 10;
+	}
+	return biggerNums = [n]
 };
+addTen(numbers);
 
 //Next Problem
 
